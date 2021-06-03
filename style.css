@@ -261,3 +261,70 @@ section {
     width: 100%;
   }
 }
+
+.why {
+  background-color: var(--gray);
+}
+
+.why-heading {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.why-desc {
+  max-width: 65%;
+  width: 100%;
+}
+
+.why-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.why-img {
+  margin-bottom: 30px;
+}
+
+.why-subheading {
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.reason-desc {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 794px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-desc {
+    max-width: initial;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .why-heading {
+    text-align: center;
+  }
+  .why-desc {
+    text-align: center;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why-subheading {
+    text-align: center;
+  }
+  .reason-desc {
+    text-align: center;
+  }
+}
