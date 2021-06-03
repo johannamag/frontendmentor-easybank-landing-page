@@ -87,3 +87,51 @@ nav {
 .mobile-nav {
   display: none;
 }
+
+@media screen and (max-width: 650px) {
+  .mobile-nav {
+    display: initial;
+  }
+  .close {
+    display: none;
+  }
+  .burger.open {
+    display: none;
+  }
+  .close.open {
+    display: block;
+  }
+  .nav-items {
+    background-color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .nav-items.open {
+    visibility: initial;
+    opacity: 1;
+  }
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .nav-link {
+    color: var(--dark-blue);
+    font-size: 1rem;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
